@@ -399,3 +399,31 @@ aside section p {
   }
 }
 
+.mapa-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Mantiene la relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que el iframe ocupe todo el ancho disponible */
+  height: 100%; /* Asegura que el iframe ocupe toda la altura disponible */
+  border: 0;
+}
+
+/* Asegurarse de que el contenedor del mapa sea responsivo en dispositivos pequeños */
+@media (max-width: 768px) {
+  .mapa-container {
+    padding-bottom: 56.25%; /* Asegura que el mapa tenga una relación 16:9 */
+  }
+}
+
