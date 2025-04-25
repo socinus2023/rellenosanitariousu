@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.logo{
+.logo {
   width: 500px;
   height: 165px;
   display: block;
@@ -76,7 +76,6 @@ nav > a:hover {
   display: block;
 }
 
-
 main {
   display: flex;
   flex: 1;
@@ -102,8 +101,6 @@ main {
 section {
   margin-bottom: 2rem;
 }
-
-/* ...otros estilos arriba... */
 
 aside section {
   background-color: #faf9f9;
@@ -190,19 +187,9 @@ footer {
   footer {
     padding: 0rem;
   }
-
 }
 
 /* Estilo para el contenedor del mapa */
-.mapa-container {
-  width: 100%;
-  max-width: 100%;  /* Asegura que el mapa no se salga del contenedor */
-  margin: 0 auto;
-  padding: 0;
-  display: block;
-}
-
-/* Estilo para el mapa responsivo */
 .mapa-responsive {
   position: relative;
   width: 100%;           /* Asegura que ocupe el 100% del contenedor */
@@ -222,7 +209,6 @@ footer {
   height: 100%;
   border: 0;
 }
-
 
 /* Información de contacto */
 #contacto {
@@ -272,7 +258,6 @@ section p {
   margin-top: 15px; /* Añadir espacio arriba de los párrafos */
 }
 
-
 aside section {
   padding: 10px 15px;
   margin-bottom: 15px;
@@ -286,7 +271,7 @@ aside section p {
   margin: 5px 0;
 }
 
-
+/* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
   .logo {
     width: 80%;
@@ -297,74 +282,14 @@ aside section p {
     padding: 10px;
     text-align: center;
   }
-}
 
-@media screen and (max-width: 900px) {
-  .wave {
-    max-height: 60px;
-  }
-}
-
-#vision i, #mision i, #contacto i {
-  font-size: 2rem !important;
-}
-
-/* Ajuste en modo responsivo */
-@media (max-width: 768px) {
-  nav {
-    text-align: center; /* Centra el menú en pantallas pequeñas */
-    padding: 20px 0; /* Ajusta el padding si es necesario */
+  footer {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem 10px;
+    flex-direction: column;
   }
 
-  nav > a {
-    display: inline-block; /* Asegura que los enlaces estén alineados horizontalmente */
-    margin: 0 10px; /* Añade margen entre los enlaces */
-  }
-}
-
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.galeria img {
-  width: 45%;
-  max-width: 300px;
-  border-radius: 10px;
-}
-
-#ubicacion {
-  text-align: center;
-  padding: 20px;
-}
-
-.mapa-responsive {
-    position: relative;
-    width: 100%;  /* Asegura que el mapa ocupe todo el ancho disponible */
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-    height: 0;  /* Establece la altura a 0 para que la proporción funcione */
-    overflow: hidden;  /* Oculta cualquier contenido que se desborde */
-    border-radius: 10px;  /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);  /* Sombra */
-    margin-top: 1rem;  /* Espaciado superior */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mapa-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;  /* Asegura que el iframe ocupe todo el ancho disponible */
-    height: 100%;  /* Asegura que el iframe ocupe toda la altura disponible */
-    border: 0;  /* Elimina el borde del iframe */
-}
-
-
-@media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
   }
@@ -386,17 +311,10 @@ aside section p {
   #vision i, #mision i, #contacto i {
     font-size: 1.4rem !important;
   }
-
-  footer {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 1rem 10px;
-    flex-direction: column;
-  }
 }
 
+/* Ajustar el tamaño de los títulos de Misión y Visión */
 @media (max-width: 768px) {
-  /* Ajustar el tamaño de los títulos de Misión y Visión */
   #vision h2, #mision h2 {
     font-size: 2rem; /* Cambia este valor a tu gusto */
   }
@@ -406,32 +324,3 @@ aside section p {
     font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
   }
 }
-
-.mapa-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* Mantiene la relación 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mapa-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Asegura que el iframe ocupe todo el ancho disponible */
-  height: 100%; /* Asegura que el iframe ocupe toda la altura disponible */
-  border: 0;
-}
-
-/* Asegurarse de que el contenedor del mapa sea responsivo en dispositivos pequeños */
-@media (max-width: 768px) {
-  .mapa-container {
-    padding-bottom: 56.25%; /* Asegura que el mapa tenga una relación 16:9 */
-  }
-}
-
