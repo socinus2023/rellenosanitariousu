@@ -196,21 +196,21 @@ footer {
 /* Estilo para el contenedor del mapa */
 .mapa-container {
   width: 100%;
-  max-width: 100%; /* Asegura que el mapa no se salga del contenedor */
-  margin: 0 auto;  /* Centra el mapa */
+  max-width: 100%;  /* Asegura que el mapa no se salga del contenedor */
+  margin: 0 auto;
   padding: 0;
   display: block;
 }
 
-/* Contenedor responsivo para el mapa */
+/* Estilo para el mapa responsivo */
 .mapa-responsive {
   position: relative;
-  width: 100%;    /* Asegura que ocupe todo el ancho disponible */
-  padding-bottom: 56.25%;  /* Relación 16:9 para la altura */
-  height: 0;      /* La altura se ajusta automáticamente */
+  width: 100%;           /* Asegura que ocupe el 100% del contenedor */
+  padding-bottom: 56.25%; /* Mantiene la relación 16:9 */
+  height: 0;             /* La altura se ajusta automáticamente */
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 auto; /* Centra el mapa */
+  margin: 0 auto;        /* Centra el mapa */
 }
 
 /* Estilo para el iframe del mapa */
