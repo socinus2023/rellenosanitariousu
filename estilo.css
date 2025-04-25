@@ -193,27 +193,25 @@ footer {
 
 }
 
-/* Estilo para el mapa responsivo */
+/* Contenedor responsivo para el mapa */
 .mapa-responsive {
   position: relative;
-  width: 50%;
-  padding-bottom: 45%;
-  height: 0;
+  width: 100%;    /* Asegura que ocupe todo el ancho disponible */
+  padding-bottom: 56.25%;  /* Relación 16:9 */
+  height: 0;      /* La altura se ajusta por la relación 16:9 */
   overflow: hidden;
+  margin: 0 auto; /* Centra el mapa */
   border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-
+/* Estilo para el iframe del mapa */
 .mapa-responsive iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  border: 0;  /* Sin bordes */
 }
 
 /* Información de contacto */
