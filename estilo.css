@@ -324,3 +324,18 @@ aside section p {
     font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
   }
 }
+
+/* Estilos para el contenedor del mapa */
+.mapa-container {
+  display: flex;
+  justify-content: center; /* Centra el mapa */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo opcional */
+}
+
+/* Estilos para el iframe del mapa */
+.mapa-responsive {
+  width: 100%;  /* Hace que el iframe ocupe el 100% del ancho del contenedor */
+  max-width: 600px;  /* Limita el ancho máximo del mapa */
+  height: 400px;  /* Altura fija para el mapa */
+}
