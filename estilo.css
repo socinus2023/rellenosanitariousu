@@ -76,7 +76,6 @@ nav > a:hover {
   display: block;
 }
 
-
 main {
   display: flex;
   flex: 1;
@@ -84,6 +83,8 @@ main {
   padding: 0.5rem;
   justify-content: center;
   margin-top: -15px; /* Ajusta este valor para reducir el espacio */
+  width: 100%;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 .contenido-principal {
@@ -102,8 +103,6 @@ main {
 section {
   margin-bottom: 2rem;
 }
-
-/* ...otros estilos arriba... */
 
 aside section {
   background-color: #faf9f9;
@@ -143,7 +142,6 @@ footer {
   width: 100%;
 }
 
-/* Estilos para los botones PDF */
 .boton-pdf-container p {
   margin-bottom: 0.5rem;
 }
@@ -177,7 +175,6 @@ footer {
   font-size: 2rem;
 }
 
-/* Estilo en modo responsivo */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
@@ -190,11 +187,29 @@ footer {
   footer {
     padding: 0rem;
   }
-
 }
 
+.mapa-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Asegura que no se desborde */
+  height: auto; /* Mantiene la altura proporcional */
+  padding-bottom: 56.25%; /* Para mantener la relación de aspecto 16:9 */
+  margin: 0 auto;
+  overflow: hidden; /* Evita el desbordamiento */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-/* Información de contacto */
+.mapa-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 #contacto {
   margin-top: 1rem;
   padding: 1rem;
@@ -228,20 +243,19 @@ footer {
 }
 
 img {
-  border-radius: 10px; /* Bordes redondeados */
-  max-width: 70%; /* Asegura que las imágenes se adapten al contenedor */
-  height: auto; /* Mantiene la proporción original */
+  border-radius: 10px;
+  max-width: 70%;
+  height: auto;
 }
 
 section h2, section h3 {
-  margin-top: 20px; /* Añadir espacio encima de los títulos */
-  margin-bottom: 15px; /* Añadir espacio debajo de los títulos */
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 section p {
-  margin-top: 15px; /* Añadir espacio arriba de los párrafos */
+  margin-top: 15px;
 }
-
 
 aside section {
   padding: 10px 15px;
@@ -255,7 +269,6 @@ aside section h3 {
 aside section p {
   margin: 5px 0;
 }
-
 
 @media (max-width: 768px) {
   .logo {
@@ -279,16 +292,15 @@ aside section p {
   font-size: 2rem !important;
 }
 
-/* Ajuste en modo responsivo */
 @media (max-width: 768px) {
   nav {
-    text-align: center; /* Centra el menú en pantallas pequeñas */
-    padding: 20px 0; /* Ajusta el padding si es necesario */
+    text-align: center;
+    padding: 20px 0;
   }
 
   nav > a {
-    display: inline-block; /* Asegura que los enlaces estén alineados horizontalmente */
-    margin: 0 10px; /* Añade margen entre los enlaces */
+    display: inline-block;
+    margin: 0 10px;
   }
 }
 
@@ -310,75 +322,3 @@ aside section p {
   text-align: center;
   padding: 20px;
 }
-
-/* Contenedor envolvente del mapa */
-.mapa-container {
-  width: 100%;
-  max-width: 100%; /* Asegura que el mapa no se haga más grande que el contenedor */
-  margin: 0 auto;
-  padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
-  position: relative;
-  overflow: hidden;
-}
-
-/* Estilo para el iframe del mapa */
-.mapa-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Asegura que el mapa sea responsivo en dispositivos móviles */
-@media (max-width: 768px) {
-  .mapa-container {
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  p, .contacto-lista span, #vision span, #mision span {
-    font-size: 0.95rem;
-    padding: 0 10px;
-    word-wrap: break-word;
-  }
-
-  #vision i, #mision i, #contacto i {
-    font-size: 1.4rem !important;
-  }
-
-  footer {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 1rem 10px;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Ajustar el tamaño de los títulos de Misión y Visión */
-  #vision h2, #mision h2 {
-    font-size: 2rem; /* Cambia este valor a tu gusto */
-  }
-
-  /* Asegurarse de que el texto dentro de los spans sea más grande */
-  #vision span, #mision span {
-    font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
-  }
-}
-
-
