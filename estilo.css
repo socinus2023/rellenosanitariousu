@@ -6,14 +6,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.logo{
-  width: 500px;
-  height: 165px;
-  display: block;
-  margin: auto;
-}
-
-/* Asegurarse de que los títulos y párrafos estén centrados */
 body {
   display: flex;
   flex-direction: column;
@@ -82,9 +74,7 @@ main {
   flex-wrap: wrap;
   padding: 0.5rem;
   justify-content: center;
-  margin-top: -15px; /* Ajusta este valor para reducir el espacio */
-  width: 100%;
-  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  margin-top: -15px;
 }
 
 .contenido-principal {
@@ -117,13 +107,13 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-  font-size: 1.5rem; /* Cambia el tamaño a 3rem, ajusta según tus necesidades */
-  color: #d49c03;  /* Cambia el color a un verde */
+  font-size: 1.5rem;
+  color: #d49c03;
 }
 
 h2 {
-  font-size: 2rem; /* Cambia el tamaño a 2rem, ajusta según tus necesidades */
-  color: #d49c03;  /* Cambia el color a un rojo tomate */
+  font-size: 2rem;
+  color: #d49c03;
 }
 
 p {
@@ -142,6 +132,7 @@ footer {
   width: 100%;
 }
 
+/* Estilos para los botones PDF */
 .boton-pdf-container p {
   margin-bottom: 0.5rem;
 }
@@ -163,18 +154,19 @@ footer {
 
 #vision i {
   color: #1E90FF;
-  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
+  font-size: 2rem;
 }
 
 #mision i {
   color: #32CD32;
-  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
+  font-size: 2rem;
 }
 
 #vision span, #mision span {
   font-size: 2rem;
 }
 
+/* Estilo en modo responsivo */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
@@ -187,17 +179,27 @@ footer {
   footer {
     padding: 0rem;
   }
+
+}
+
+/* Estilo para el mapa responsivo */
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .mapa-responsive {
   position: relative;
   width: 100%;
-  max-width: 100%; /* Asegura que no se desborde */
-  height: auto; /* Mantiene la altura proporcional */
-  padding-bottom: 56.25%; /* Para mantener la relación de aspecto 16:9 */
-  margin: 0 auto;
-  overflow: hidden; /* Evita el desbordamiento */
-  border-radius: 10px;
+  height: 300px;
+  max-width: 100%;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -210,6 +212,7 @@ footer {
   border: 0;
 }
 
+/* Información de contacto */
 #contacto {
   margin-top: 1rem;
   padding: 1rem;
@@ -321,4 +324,64 @@ aside section p {
 #ubicacion {
   text-align: center;
   padding: 20px;
+}
+
+.mapa-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.mapa-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p, .contacto-lista span, #vision span, #mision span {
+    font-size: 0.95rem;
+    padding: 0 10px;
+    word-wrap: break-word;
+  }
+
+  #vision i, #mision i, #contacto i {
+    font-size: 1.4rem !important;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem 10px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  #vision h2, #mision h2 {
+    font-size: 2rem;
+  }
+
+  .galeria img {
+    width: 90%;
+  }
 }
