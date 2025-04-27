@@ -79,17 +79,19 @@ nav > a:hover {
 
 main {
   display: flex;
-  flex: 1;
   flex-wrap: wrap;
-  padding: 0.5rem;
-  justify-content: center;
-  margin-top: -15px; /* Ajusta este valor para reducir el espacio */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+
 .contenido-principal {
-  flex: 2;
-  padding: 1rem;
-  background-color: #ffffff;
+  max-width: 100%;
+  overflow: hidden;  /* Evita que el contenido se desborde */
+  padding: 0 1rem;   /* Añade un pequeño espacio para no estar pegado a los bordes */
 }
 
 .contenido-secundario {
@@ -345,6 +347,9 @@ aside section p {
 #ubicacion {
   margin-top: 2rem;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .mapa-responsive {
