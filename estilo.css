@@ -15,12 +15,13 @@
 
 /* Asegurando que el contenedor principal sea flexible */
 body {
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
 }
 
 header {
@@ -195,13 +196,21 @@ footer {
 
 }
 
+/* Contenedor principal para mantener todo centrado */
+.container {
+  width: 100%;
+  max-width: 1200px;  /* Ajusta el ancho máximo del contenido */
+  margin: 0 auto; /* Esto centrará el contenido */
+  padding: 1rem;
+}
+
 /* Información de contacto */
 #contacto {
   margin-top: 1rem;
   padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 8px;
-  width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+  width: 100%;
 }
 
 #contacto h3 {
@@ -228,21 +237,10 @@ footer {
   font-size: 1.5rem;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  #contacto {
-    padding: 1rem;
-  }
-
-  .contacto-lista {
-    max-width: 100%; /* Asegura que la lista ocupe todo el ancho disponible */
-    padding-left: 1rem; /* Añadido un pequeño margen */
-  }
-}
 /* Estilo para el mapa responsivo */
 .mapa-responsive {
   position: relative;
-  width: 100%; /* Cambié a 100% para pantallas pequeñas */
+  width: 100%;
   padding-bottom: 45%;
   height: 0;
   overflow: hidden;
@@ -263,6 +261,16 @@ footer {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  /* Asegura que la lista ocupe todo el ancho disponible */
+  .contacto-lista {
+    max-width: 100%;
+  }
+
+  /* Ajuste del mapa */
   .mapa-responsive {
     width: 100%;
   }
