@@ -317,36 +317,27 @@ aside section p {
 }
 
 #contacto {
-  background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 10px;
+  background: #f9f9f9;
+  padding: 1rem;
   margin: 2rem auto;
-  max-width: 700px;
+  border-radius: 8px;
+  max-width: 800px;
   text-align: center;
 }
 
 #contacto h2 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #333;
 }
 
-.contacto-lista {
+#contacto ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  text-align: left;
-  max-width: 500px;
+  margin: 0;
 }
 
-.contacto-lista li {
-  margin-bottom: 1rem;
+#contacto li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
-.seccion-principal {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
