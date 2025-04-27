@@ -344,3 +344,9 @@ aside section p {
   margin-bottom: 1rem;
 }
 
+.seccion-principal {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
