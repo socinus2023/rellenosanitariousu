@@ -314,6 +314,8 @@ aside section p {
 #ubicacion {
   text-align: center;
   padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Estilos para que el mapa sea totalmente responsivo */
@@ -376,5 +378,10 @@ aside section p {
   #vision span, #mision span {
     font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
   }
+}
+
+body, main {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
