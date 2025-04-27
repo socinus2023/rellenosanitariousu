@@ -1,3 +1,4 @@
+CSS
 /* Estilos generales */
 * {
   margin: 0;
@@ -6,7 +7,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.logo {
+.logo{
   width: 500px;
   height: 165px;
   display: block;
@@ -76,13 +77,14 @@ nav > a:hover {
   display: block;
 }
 
+
 main {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   padding: 0.5rem;
   justify-content: center;
-  margin-top: -15px;
+  margin-top: -15px; /* Ajusta este valor para reducir el espacio */
 }
 
 .contenido-principal {
@@ -102,6 +104,8 @@ section {
   margin-bottom: 2rem;
 }
 
+/* ...otros estilos arriba... */
+
 aside section {
   background-color: #faf9f9;
   padding: 20px;
@@ -115,13 +119,13 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-  font-size: 1.5rem;
-  color: #d49c03;
+  font-size: 1.5rem; /* Cambia el tamaño a 3rem, ajusta según tus necesidades */
+  color: #d49c03;  /* Cambia el color a un verde */
 }
 
 h2 {
-  font-size: 2rem;
-  color: #d49c03;
+  font-size: 2rem; /* Cambia el tamaño a 2rem, ajusta según tus necesidades */
+  color: #d49c03;  /* Cambia el color a un rojo tomate */
 }
 
 p {
@@ -160,11 +164,21 @@ footer {
   background-color: #cacc47;
 }
 
-#vision i, #mision i, #contacto i {
-  font-size: 2rem !important;
+#vision i {
+  color: #1E90FF;
+  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
 }
 
-/* Ajustes responsivos */
+#mision i {
+  color: #32CD32;
+  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
+}
+
+#vision span, #mision span {
+  font-size: 2rem;
+}
+
+/* Estilo en modo responsivo */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
@@ -178,6 +192,39 @@ footer {
     padding: 0rem;
   }
 
+}
+
+img {
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 70%; /* Asegura que las imágenes se adapten al contenedor */
+  height: auto; /* Mantiene la proporción original */
+}
+
+section h2, section h3 {
+  margin-top: 20px; /* Añadir espacio encima de los títulos */
+  margin-bottom: 15px; /* Añadir espacio debajo de los títulos */
+}
+
+section p {
+  margin-top: 15px; /* Añadir espacio arriba de los párrafos */
+}
+
+
+aside section {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+aside section h3 {
+  margin-bottom: 10px;
+}
+
+aside section p {
+  margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
   .logo {
     width: 80%;
     height: auto;
@@ -187,8 +234,47 @@ footer {
     padding: 10px;
     text-align: center;
   }
+}
 
-  /* Ajuste de tamaños de fuentes */
+@media screen and (max-width: 900px) {
+  .wave {
+    max-height: 60px;
+  }
+}
+
+#vision i, #mision i, #contacto i {
+  font-size: 2rem !important;
+}
+
+/* Ajuste en modo responsivo */
+@media (max-width: 768px) {
+  nav {
+    text-align: center; /* Centra el menú en pantallas pequeñas */
+    padding: 20px 0; /* Ajusta el padding si es necesario */
+  }
+
+  nav > a {
+    display: inline-block; /* Asegura que los enlaces estén alineados horizontalmente */
+    margin: 0 10px; /* Añade margen entre los enlaces */
+  }
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.galeria img {
+  width: 45%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
   h1 {
     font-size: 1.8rem;
   }
@@ -207,63 +293,26 @@ footer {
     word-wrap: break-word;
   }
 
+  #vision i, #mision i, #contacto i {
+    font-size: 1.4rem !important;
+  }
+
   footer {
     font-size: 0.9rem;
     text-align: center;
     padding: 1rem 10px;
     flex-direction: column;
   }
+}
 
-  /* Ajustar los títulos de Misión y Visión */
+@media (max-width: 768px) {
+  /* Ajustar el tamaño de los títulos de Misión y Visión */
   #vision h2, #mision h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Cambia este valor a tu gusto */
   }
 
+  /* Asegurarse de que el texto dentro de los spans sea más grande */
   #vision span, #mision span {
-    font-size: 1.5rem;
-  }
-
-  /* Mejorar la visualización en secciones de contacto */
-  .contacto-lista {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .contacto-lista li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
   }
 }
-
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.galeria img {
-  width: 45%;
-  max-width: 300px;
-  border-radius: 10px;
-}
-
-/* Sección de mapa */
-.mapa-responsive {
-  position: relative;
-  padding-bottom: 56.25%; /* Aspect ratio de 16:9 */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #f0f0f0;
-}
-
-.mapa-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
