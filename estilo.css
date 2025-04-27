@@ -193,72 +193,6 @@ footer {
 
 }
 
-/* Estilo para la sección de contacto */
-.seccion-contacto {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  margin: 2rem auto;
-  max-width: 800px;  /* Asegura que no se expanda demasiado */
-  text-align: center;
-}
-
-.seccion-contacto h3 {
-  margin-bottom: 1rem;
-}
-
-.contacto-lista {
-  list-style: none;
-  padding-left: 0;
-  text-align: left;
-  font-size: 1rem;
-}
-
-.contacto-lista li {
-  margin-bottom: 1rem;
-}
-
-.contacto-lista li strong {
-  color: #333;
-}
-
-.contacto-lista li {
-  font-size: 0.9rem;
-}
-
-.contacto-lista li i {
-  color: #ccad24;
-  font-size: 1.5rem;
-}
-
-/* Estilo para la sección de mapa */
-.seccion-ubicacion {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  margin: 2rem auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.mapa-responsive {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;  /* Relación 16:9 para el mapa */
-  height: 0;
-  overflow: hidden;
-  margin-top: 1rem;
-}
-
-.mapa-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 img {
   border-radius: 10px; /* Bordes redondeados */
   max-width: 70%; /* Asegura que las imágenes se adapten al contenedor */
@@ -338,29 +272,6 @@ aside section p {
   border-radius: 10px;
 }
 
-#ubicacion {
-  text-align: center;
-  padding: 20px;
-}
-
-.mapa-responsive {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* para que sea 16:9 en cualquier pantalla */
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.mapa-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 
 @media (max-width: 768px) {
   h1 {
