@@ -197,37 +197,45 @@ footer {
   }
 }
 
-/* Información de contacto */
+/* Asegúrate de que no haya desbordamiento */
 #contacto {
-  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;  /* Eliminar márgenes extra */
   padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  overflow: hidden;  /* Evitar desbordamientos */
 }
 
-#contacto h3 {
-  margin-bottom: 0.5rem;
-}
-
+/* Asegurar que la lista de contacto no se desborde */
 .contacto-lista {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
   padding-left: 0;
-  text-align: left;
-  max-width: 400px;
-  margin: 0 auto;
+  box-sizing: border-box;  /* Asegurarse de que no se salga de su contenedor */
 }
 
-.contacto-lista li {
-  margin-bottom: 0.5rem;
-}
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  #contacto {
+    margin: 0;
+    padding: 0 1rem;
+  }
 
-#contacto i {
-  color: #ccad24;
-  font-size: 2rem;
-}
+  .contacto-lista {
+    margin: 0;
+  }
 
-#contacto span {
-  font-size: 1.5rem;
+  /* Asegurar que la sección de contacto se ajuste bien en móvil */
+  #contacto i {
+    font-size: 1.4rem; /* Reducir tamaño de los íconos */
+  }
+
+  #contacto span {
+    font-size: 1.2rem; /* Reducir el tamaño del texto */
+  }
 }
 
 img {
