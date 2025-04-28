@@ -142,14 +142,15 @@ footer {
   width: 100%;
   padding: 1rem;
   text-align: center;
-  box-sizing: border-box;  /* Asegura que el padding no afecte el ancho */
-  margin: 0;  /* Elimina cualquier margen que pueda afectar la disposición */
+  box-sizing: border-box;
+  margin: 0;
+  white-space: nowrap;  /* Impide que el texto se rompa en varias líneas */
+  overflow: hidden;     /* Evita que el texto se desborde */
 }
 
 footer p {
-  max-width: 100%;  /* Evita que el texto se salga del contenedor */
-  word-wrap: break-word;  /* Hace que el texto largo se divida si es necesario */
-  margin: 0;  /* Elimina márgenes adicionales */
+  margin: 0;
+  font-size: 14px;  /* Ajusta el tamaño del texto si es necesario */
 }
 
 
@@ -195,10 +196,6 @@ footer p {
 
   .boton-pdf-container {
     margin-bottom: 20px;
-  }
-
-  footer {
-    padding: 0rem;
   }
 }
 
