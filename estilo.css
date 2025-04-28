@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.logo {
+.logo{
   width: 500px;
   height: 165px;
   display: block;
@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
+  overflow-x: hidden; /* Evita desbordamientos horizontales */
 }
 
 header {
@@ -102,18 +103,7 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Ajustes para los nuevos aside y contacto */
-aside .contenido-secundario {
-  background-color: #f2fac6; /* Mantén el estilo para el contenido secundario */
-}
-
-aside .contacto-mapa {
-  flex: 1;
-  padding: 1rem;
-  background-color: #faf9f9;
-  border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+/* ...otros estilos arriba... */
 
 aside section {
   background-color: #faf9f9;
@@ -128,13 +118,13 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-  font-size: 1.5rem;
-  color: #d49c03;
+  font-size: 1.5rem; /* Cambia el tamaño a 3rem, ajusta según tus necesidades */
+  color: #d49c03;  /* Cambia el color a un verde */
 }
 
 h2 {
-  font-size: 2rem;
-  color: #d49c03;
+  font-size: 2rem; /* Cambia el tamaño a 2rem, ajusta según tus necesidades */
+  color: #d49c03;  /* Cambia el color a un rojo tomate */
 }
 
 p {
@@ -175,12 +165,12 @@ footer {
 
 #vision i {
   color: #1E90FF;
-  font-size: 2rem;
+  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
 }
 
 #mision i {
   color: #32CD32;
-  font-size: 2rem;
+  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
 }
 
 #vision span, #mision span {
@@ -203,19 +193,20 @@ footer {
 }
 
 img {
-  border-radius: 10px;
-  max-width: 70%;
-  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 70%; /* Asegura que las imágenes se adapten al contenedor */
+  height: auto; /* Mantiene la proporción original */
 }
 
 section h2, section h3 {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 20px; /* Añadir espacio encima de los títulos */
+  margin-bottom: 15px; /* Añadir espacio debajo de los títulos */
 }
 
 section p {
-  margin-top: 15px;
+  margin-top: 15px; /* Añadir espacio arriba de los párrafos */
 }
+
 
 aside section {
   padding: 10px 15px;
@@ -228,6 +219,25 @@ aside section h3 {
 
 aside section p {
   margin: 5px 0;
+}
+
+/* Reglas específicas para Chrome en dispositivos móviles */
+@supports (-webkit-touch-callout: none) {
+  /* Solución específica para Chrome en dispositivos móviles */
+  .contacto-mapa, .contenido-secundario {
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Estilos para flexbox para evitar expansión */
+.contacto-mapa, .contenido-secundario {
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-max-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -252,15 +262,16 @@ aside section p {
   font-size: 2rem !important;
 }
 
+/* Ajuste en modo responsivo */
 @media (max-width: 768px) {
   nav {
-    text-align: center;
-    padding: 20px 0;
+    text-align: center; /* Centra el menú en pantallas pequeñas */
+    padding: 20px 0; /* Ajusta el padding si es necesario */
   }
 
   nav > a {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline-block; /* Asegura que los enlaces estén alineados horizontalmente */
+    margin: 0 10px; /* Añade margen entre los enlaces */
   }
 }
 
@@ -278,44 +289,16 @@ aside section p {
   border-radius: 10px;
 }
 
+/* Estilo para Misión y Visión en pantallas pequeñas */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  p, .contacto-lista span, #vision span, #mision span {
-    font-size: 0.95rem;
-    padding: 0 10px;
-    word-wrap: break-word;
-  }
-
-  #vision i, #mision i, #contacto i {
-    font-size: 1.4rem !important;
-  }
-
-  footer {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 1rem 10px;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
+  /* Ajustar el tamaño de los títulos de Misión y Visión */
   #vision h2, #mision h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Cambia este valor a tu gusto */
   }
 
+  /* Asegurarse de que el texto dentro de los spans sea más grande */
   #vision span, #mision span {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
   }
 }
 
