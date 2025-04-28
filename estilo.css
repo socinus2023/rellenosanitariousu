@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.logo{
+.logo {
   width: 500px;
   height: 165px;
   display: block;
@@ -76,7 +76,6 @@ nav > a:hover {
   display: block;
 }
 
-
 main {
   display: flex;
   flex: 1;
@@ -103,7 +102,18 @@ section {
   margin-bottom: 2rem;
 }
 
-/* ...otros estilos arriba... */
+/* Ajustes para los nuevos aside y contacto */
+aside .contenido-secundario {
+  background-color: #f2fac6; /* Mantén el estilo para el contenido secundario */
+}
+
+aside .contacto-mapa {
+  flex: 1;
+  padding: 1rem;
+  background-color: #faf9f9;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 aside section {
   background-color: #faf9f9;
@@ -118,13 +128,13 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-  font-size: 1.5rem; /* Cambia el tamaño a 3rem, ajusta según tus necesidades */
-  color: #d49c03;  /* Cambia el color a un verde */
+  font-size: 1.5rem;
+  color: #d49c03;
 }
 
 h2 {
-  font-size: 2rem; /* Cambia el tamaño a 2rem, ajusta según tus necesidades */
-  color: #d49c03;  /* Cambia el color a un rojo tomate */
+  font-size: 2rem;
+  color: #d49c03;
 }
 
 p {
@@ -165,12 +175,12 @@ footer {
 
 #vision i {
   color: #1E90FF;
-  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
+  font-size: 2rem;
 }
 
 #mision i {
   color: #32CD32;
-  font-size: 2rem; /* Ajusta este valor según el tamaño que prefieras */
+  font-size: 2rem;
 }
 
 #vision span, #mision span {
@@ -190,24 +200,22 @@ footer {
   footer {
     padding: 0rem;
   }
-
 }
 
 img {
-  border-radius: 10px; /* Bordes redondeados */
-  max-width: 70%; /* Asegura que las imágenes se adapten al contenedor */
-  height: auto; /* Mantiene la proporción original */
+  border-radius: 10px;
+  max-width: 70%;
+  height: auto;
 }
 
 section h2, section h3 {
-  margin-top: 20px; /* Añadir espacio encima de los títulos */
-  margin-bottom: 15px; /* Añadir espacio debajo de los títulos */
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 section p {
-  margin-top: 15px; /* Añadir espacio arriba de los párrafos */
+  margin-top: 15px;
 }
-
 
 aside section {
   padding: 10px 15px;
@@ -221,7 +229,6 @@ aside section h3 {
 aside section p {
   margin: 5px 0;
 }
-
 
 @media (max-width: 768px) {
   .logo {
@@ -245,16 +252,15 @@ aside section p {
   font-size: 2rem !important;
 }
 
-/* Ajuste en modo responsivo */
 @media (max-width: 768px) {
   nav {
-    text-align: center; /* Centra el menú en pantallas pequeñas */
-    padding: 20px 0; /* Ajusta el padding si es necesario */
+    text-align: center;
+    padding: 20px 0;
   }
 
   nav > a {
-    display: inline-block; /* Asegura que los enlaces estén alineados horizontalmente */
-    margin: 0 10px; /* Añade margen entre los enlaces */
+    display: inline-block;
+    margin: 0 10px;
   }
 }
 
@@ -271,7 +277,6 @@ aside section p {
   max-width: 300px;
   border-radius: 10px;
 }
-
 
 @media (max-width: 768px) {
   h1 {
@@ -305,65 +310,12 @@ aside section p {
 }
 
 @media (max-width: 768px) {
-  /* Ajustar el tamaño de los títulos de Misión y Visión */
   #vision h2, #mision h2 {
-    font-size: 2rem; /* Cambia este valor a tu gusto */
+    font-size: 2rem;
   }
 
-  /* Asegurarse de que el texto dentro de los spans sea más grande */
   #vision span, #mision span {
-    font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
-  }
-}
-
-/* Estilos para el nuevo aside (contacto y mapa) */
-.contacto-mapa {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #f4f4f4;  /* Fondo claro para diferenciar */
-  border-radius: 10px;
-}
-
-.contacto-lista {
-  list-style-type: none;
-  padding: 0;
-}
-
-.contacto-lista li {
-  margin-bottom: 10px;
-}
-
-.mapa-responsive {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-  height: 0;
-  max-width: 100%;
-}
-
-.mapa-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-  .contacto-mapa {
-    margin-top: 1rem;
-  }
-
-  .contacto-lista li {
-    font-size: 0.9rem;
-  }
-  
-  .mapa-responsive iframe {
-    border: 0;
+    font-size: 1.5rem;
   }
 }
 
