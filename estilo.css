@@ -302,3 +302,39 @@ aside section p {
   }
 }
 
+/* Estilos para la sección de contacto */
+.seccion-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contacto-lista {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Asegura que la lista no se desborde */
+  max-width: 500px; /* Limita el ancho máximo para que no se expanda demasiado */
+  margin: 0 auto; /* Centra la lista dentro del aside */
+}
+
+.contacto-lista li {
+  font-size: 1rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+  margin-bottom: 10px; /* Añade espacio entre cada elemento de la lista */
+  word-wrap: break-word; /* Hace que las palabras largas se dividan si es necesario */
+}
+
+.contacto-lista li strong {
+  font-weight: bold; /* Da énfasis a los títulos de cada dato */
+}
+
+/* Asegúrate de que el iframe del mapa se adapte bien en dispositivos pequeños */
+.mapa-responsive iframe {
+  width: 100%; /* Asegura que el mapa ocupe el 100% del contenedor */
+  max-width: 600px; /* Limita el ancho máximo del mapa */
+  height: 350px; /* Ajusta la altura según lo necesites */
+  border: none; /* Elimina los bordes del iframe */
+  border-radius: 10px; /* Bordes redondeados para mejorar la apariencia */
+}
+
