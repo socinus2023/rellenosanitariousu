@@ -335,6 +335,7 @@ aside section p {
   font-size: 1rem;
   margin-bottom: 10px;
   word-wrap: break-word;
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
 }
 
 .contacto-lista li strong {
