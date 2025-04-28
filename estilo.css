@@ -138,19 +138,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: auto; /* Cambiamos de fijo a auto */
   width: 100%;
   padding: 1rem;
   text-align: center;
   box-sizing: border-box;
   margin: 0;
-  white-space: nowrap;  /* Impide que el texto se rompa en varias líneas */
-  overflow: hidden;     /* Evita que el texto se desborde */
 }
 
 footer p {
   margin: 0;
-  font-size: 14px;  /* Ajusta el tamaño del texto si es necesario */
+  font-size: 16px;
+  white-space: normal; /* Permitimos que en pantallas pequeñas sí baje de línea */
+  word-break: break-word; /* Para que corte si es necesario */
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  footer p {
+    font-size: 14px;
+  }
 }
 
 
