@@ -138,7 +138,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Cambiamos de fijo a auto */
+  height: 100px; /* altura fija en escritorio */
   width: 100%;
   padding: 1rem;
   text-align: center;
@@ -149,17 +149,21 @@ footer {
 footer p {
   margin: 0;
   font-size: 16px;
-  white-space: normal; /* Permitimos que en pantallas pequeñas sí baje de línea */
-  word-break: break-word; /* Para que corte si es necesario */
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* Responsive para móviles */
 @media (max-width: 600px) {
+  footer {
+    height: auto; /* altura automática en móviles */
+    padding: 1rem 0.5rem; /* menos padding en móvil */
+  }
+
   footer p {
     font-size: 14px;
   }
 }
-
 
 /* Estilos para los botones PDF */
 .boton-pdf-container p {
