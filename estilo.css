@@ -141,6 +141,13 @@ footer {
   height: 100px;
   padding: 1rem;
   width: 100%;
+  text-align: center;  /* Alinea el texto al centro */
+  box-sizing: border-box;  /* Asegura que el padding no afecte el ancho */
+}
+
+footer p {
+  max-width: 100%;  /* Evita que el texto se salga del contenedor */
+  word-wrap: break-word;  /* Hace que el texto largo se divida si es necesario */
 }
 
 /* Estilos para los botones PDF */
