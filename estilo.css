@@ -194,7 +194,7 @@ footer p {
   }
 
   .boton-pdf-container {
-    margin-bottom: 30;
+    margin-bottom: 30px;
   }
 
   footer {
@@ -328,7 +328,7 @@ aside section p {
   flex-direction: row; /* Esto coloca los elementos en una fila */
   flex-wrap: wrap; /* Esto permite que los elementos se ajusten si no caben en una sola fila */
   justify-content: flex-start; /* Alinea los elementos a la izquierda */
-  gap: 20px; /* Añade espacio entre los elementos */
+  gap: 10px; /* Añade espacio entre los elementos */
 }
 
 .contacto-lista li {
