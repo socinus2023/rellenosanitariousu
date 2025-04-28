@@ -139,16 +139,19 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100px;
-  padding: 1rem;
   width: 100%;
-  text-align: center;  /* Alinea el texto al centro */
+  padding: 1rem;
+  text-align: center;
   box-sizing: border-box;  /* Asegura que el padding no afecte el ancho */
+  margin: 0;  /* Elimina cualquier margen que pueda afectar la disposición */
 }
 
 footer p {
   max-width: 100%;  /* Evita que el texto se salga del contenedor */
   word-wrap: break-word;  /* Hace que el texto largo se divida si es necesario */
+  margin: 0;  /* Elimina márgenes adicionales */
 }
+
 
 /* Estilos para los botones PDF */
 .boton-pdf-container p {
